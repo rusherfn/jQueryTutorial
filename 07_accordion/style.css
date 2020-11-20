@@ -22,7 +22,7 @@ ul {
 }
 
 h1 {
-  color: #eeeeee;
+  color: #eee;
   margin: 4rem 0;
   text-align: center;
 }
@@ -39,17 +39,17 @@ h2::after {
   content: '';
   position: absolute;
   top: 26px;
-  right: 20px;
+  right: 16px;
   width: 10px;
   height: 10px;
   border-right: 2px solid #ddd;
   border-bottom: 2px solid #ddd;
-  transform: rotate(45deg);
-  transition: all 0.3s;
+  transform: rotate(-45deg);
+  transition: all 0.2s;
 }
 
 h2.active::after {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 .content {

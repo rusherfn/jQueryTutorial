@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>jQuery | Drop Down</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>DropDown</h1>
+        <ul class="gnb">
+          <li><a href="#">Menu1</a>
+            <ul>
+              <li><a href="#">submenu1</a></li>
+              <li><a href="#">submenu2</a></li>
+              <li><a href="#">submenu3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu2</a>
+            <ul>
+              <li><a href="#">submenu1</a></li>
+              <li><a href="#">submenu2</a></li>
+              <li><a href="#">submenu3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu3</a>
+            <ul>
+              <li><a href="#">submenu1</a></li>
+              <li><a href="#">submenu2</a></li>
+              <li><a href="#">submenu3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu4</a>
+            <ul>
+              <li><a href="#">submenu1</a></li>
+              <li><a href="#">submenu2</a></li>
+              <li><a href="#">submenu3</a></li>
+              <li><a href="#">submenu4</a></li>
+              <li><a href="#">submenu5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu5</a>
+            <ul>
+              <li><a href="#">submenu1</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <div class="social">
+          <a href="#"><i class="xi-kakaotalk"></i></a>
+          <a href="#"><i class="xi-youtube-play"></i></a>
+        </div>
+      </div>
+      <main>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus eos accusantium pariatur nihil ab provident atque quasi alias ipsa obcaecati voluptates, officiis vero perferendis consequuntur autem consequatur quam. Quia facilis adipisci temporibus ipsum veniam perspiciatis natus, ab sit nihil autem magni voluptatem ducimus, vero dolorum ipsam eius ad. Sint officiis consequuntur, earum ducimus dolore cumque soluta animi, ex necessitatibus delectus hic reprehenderit omnis consequatur quaerat repellendus rerum quis? Accusantium nulla sunt dolore ducimus eaque deleniti commodi, saepe quaerat, itaque odio nobis sed ratione recusandae perspiciatis sint quis, quia fuga tempore asperiores reprehenderit a eveniet? Velit, excepturi nobis? Officia pariatur, molestias error excepturi, est in minus esse nisi nesciunt ex minima impedit rem, eaque aliquid! Natus sint harum delectus, qui aut corrupti culpa, numquam fuga omnis in distinctio, error sequi magni! Pariatur neque iure, mollitia nulla iusto perferendis a facilis saepe esse minima velit ad voluptate sunt nostrum consequuntur numquam, eum hic est soluta iste. Quia molestias soluta vel! Accusamus praesentium voluptate sunt vero repudiandae odio provident ab libero, nihil distinctio veritatis incidunt minus, velit, voluptatum eius omnis officiis quibusdam fugiat! Voluptatem cum earum error labore accusamus numquam incidunt. Commodi, earum modi fugit laborum, ipsum reprehenderit quis atque aperiam, est repellat repudiandae officia nostrum fuga iste? Voluptatem ipsa ratione eligendi delectus voluptas atque. Aspernatur repellat harum ducimus ad ipsum! Porro voluptas pariatur debitis minus exercitationem inventore molestiae recusandae. Hic delectus odio cumque numquam explicabo pariatur, itaque velit. Voluptatibus vel saepe animi architecto fugiat dignissimos quis a. Accusamus, porro autem nihil distinctio non quam sit aliquam at nobis, consectetur vero consequuntur! Aliquam officia eum, eos beatae vero animi at magnam nemo possimus quasi repudiandae. Culpa aut minima sit esse pariatur optio magni placeat neque, eaque impedit, consequatur asperiores distinctio fugit commodi voluptates unde assumenda ullam repudiandae ipsa harum autem dignissimos! Et rem reiciendis enim labore nemo, voluptates iure facere quas atque modi praesentium deserunt corrupti aliquid sapiente dolorum soluta blanditiis, est facilis! Labore provident dignissimos maiores optio in debitis odio sed, at iusto dicta quisquam. Vero molestias optio voluptates! Ipsam neque deleniti eveniet, voluptatem voluptates, laudantium amet exercitationem consequatur non quis aut ea quaerat sed. Explicabo ullam dolor animi, laudantium voluptatibus delectus ex? Perspiciatis omnis qui optio culpa molestias ratione consequuntur eligendi corrupti quos nihil perferendis, placeat magnam! Quasi, molestiae blanditiis illum quidem magnam non labore recusandae reiciendis corporis aspernatur dicta facilis commodi cupiditate nemo! Eos eum nulla aut tempore, vero hic odit porro molestiae! Labore modi non distinctio adipisci, dolores ab debitis explicabo sequi commodi veritatis voluptates fuga sed fugiat est voluptas porro corrupti, alias eum ducimus placeat iste? Mollitia at ea iste odio. Ex placeat velit quae atque voluptatem id, dolorem maxime aliquid ad. Veniam mollitia reiciendis minima deserunt reprehenderit quae officiis, in omnis, dignissimos optio aperiam labore minus aliquid, voluptatem eaque id! Accusantium, fugit nostrum? Nam illum, illo modi iure alias expedita laboriosam. Minima repellat rem qui quam, illum ratione accusamus laudantium laborum vitae nisi incidunt nesciunt mollitia totam eaque exercitationem neque ab excepturi quasi. Ipsam, molestiae minima.
+        </p>
+      </main>
+    </div>
+
+    <script>
+      var item = $('.gnb li')
+
+      item.hover(function(){
+        $(this).find('ul').stop().slideDown('fast', 'linear')
+      }, function() {
+        $(this).find('ul').stop().slideUp()('fast', 'linear')
+      })
+    </script>
+  </body>
+</html>
